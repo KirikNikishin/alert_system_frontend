@@ -1,42 +1,20 @@
 ## Как развернуть проект:
 
 > [!WARNING]
-> В связи с использованием библиотеки **_Django 5.1.2_** `версия Python должна быть 3.10 и выше`
+> Для работы должен быть установлен пакет Node.js версии 20.0.0`
 
 1. Клонировать репозиторий
    ```shell 
-   git clone https://github.com/RdZilla/alert_system.git
+   git clone https://github.com/KirikNikishin/alert_system_frontend.git
    ```
 
-2. Создание виртуального окружения
+2. Запуск фронтенда осуществляется с папки my-app
    ```shell
-   python -m venv .venv
+   cd my-app
    ```
-3. Активация виртуального окружения
+3. Запуск программы на локальный сервер
    ```shell
-   .\.venv\Scripts\activate
+   npm start
    ```
-4. Обновление пакетного менеджера
-   ```shell
-   python.exe -m pip install --upgrade pip
-   ```
-5. Установка Django и зависимых пакетов
-   ```shell
-   pip install -r .\requirements.txt
-   ```
-6. Применение миграций
-   ``` shell
-   python .\manage.py migrate
-   ```
-7. Запуск проекта
-    ```shell
-    python .\manage.py runserver
-    ```
-8. Документация API
-   * Swagger доступен по адресу http://localhost:8000/swagger
-9. Панель администратора сайта
-   * Admin панель доступна по адресу http://localhost:8000/admin
-10. База данных пустая
-11. Учётные данные суперпользователя:
-    * Логин: admin
-    * Пароль: admin 
+4. Главная страница
+   * Главная страница доступна по адресу http://localhost:3000/
